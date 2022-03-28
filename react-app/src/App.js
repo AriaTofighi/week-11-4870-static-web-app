@@ -13,7 +13,7 @@ function App() {
   }, []);
 
   const getToons = async () => {
-    return await fetch("http://localhost:7071/api/toons");
+    return await fetch("/api/toons");
   };
 
   return (
