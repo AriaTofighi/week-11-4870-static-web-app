@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState, useEffect } from "react";
 
@@ -14,7 +13,7 @@ function App() {
   }, []);
 
   const getToons = async () => {
-    return await fetch("/api/toons");
+    return await fetch("http://localhost:7071/api/toons");
   };
 
   return (
